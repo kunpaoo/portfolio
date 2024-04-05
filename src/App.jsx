@@ -12,7 +12,7 @@ function App() {
         {/* first screen */}
       <div className='h-screen w-full flex flex-col items-center justify-center '>
 
-        <div className='max-w-screen w-full flex flex-col items-center'>
+        <div className='max-w-screen overflow-clip w-full flex flex-col items-center'>
         <div className="title text-10xl font-black tracking-tight shadow-sm w-2/4 text-start self-start slide-left">
         HELLO!
         </div>
