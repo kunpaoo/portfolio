@@ -10,10 +10,22 @@ body{
 
 
 .title{
-  -webkit-text-stroke: #f79663 1px;
+  -webkit-text-stroke: #b1233f 2px;
   -webkit-text-fill-color: transparent;
-  position: relative;
   
+
+  position: relative;
+  background: linear-gradient(to top, #A71E3C, #DC4361, #E68480);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(2px 2px #E68480);
+  
+}
+
+.title-outline{
+  position: relative;
+  -webkit-text-stroke: #E68480 2px;
+  -webkit-text-fill-color: transparent;
 }
 
 .slide-left{

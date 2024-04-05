@@ -12,11 +12,11 @@ function App() {
         {/* first screen */}
       <div className='h-screen w-full flex flex-col items-center justify-center '>
 
-        <div className='max-w-screen overflow-clip w-full flex flex-col items-center'>
-        <div className="title text-10xl font-black tracking-tight shadow-sm w-2/4 text-start self-start slide-left">
+        <div className='max-w-screen overflow-x-clip w-full flex flex-col items-center'>
+        <div className="title text-10xl font-black tracking-tight w-2/4 text-start self-start slide-left">
         HELLO!
         </div>
-        <div className="title text-9xl font-black tracking-tight shadow-sm w-2/4 text-end self-end slide-right">
+        <div className="title-outline text-9xl font-black tracking-tight shadow-sm w-2/4 text-end self-end slide-right">
         HELLO!
         </div>
       </div>
