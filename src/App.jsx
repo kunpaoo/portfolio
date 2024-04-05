@@ -1,33 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="h-full flex flex-col items-center justify-center">
+
+
+
+        {/* first screen */}
+      <div className='h-screen w-full flex flex-col items-center justify-center '>
+
+        <div className='max-w-screen w-full flex flex-col items-center'>
+        <div className="title text-10xl font-black tracking-tight shadow-sm w-2/4 text-start self-start slide-left">
+        HELLO!
+        </div>
+        <div className="title text-9xl font-black tracking-tight shadow-sm w-2/4 text-end self-end slide-right">
+        HELLO!
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+
+      <div className='h-screen flex flex-col items-center'>
+        <div className="title w-30 m-auto text-6xl font-black tracking-tight">
+        HELLO
+        </div>
+        <div className="bg-blue-green w-2/4 h-auto p-10 outline outline-red-one outline-offset-2 text-sm shadow-xl text-blue-dark tracking-tight leading-tight font-extrabold">
+          Consequat dolore dolor exercitation in tempor aute pariatur minim tempor excepteur. Culpa et laborum voluptate ut. Dolor sunt est nostrud adipisicing exercitation in adipisicing sunt anim velit ad aliquip magna. Et esse culpa minim tempor velit est et consectetur amet deserunt.
+        </div>
+      </div>
+      </div>
     </>
   )
 }

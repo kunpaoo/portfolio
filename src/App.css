@@ -1,42 +1,37 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  background: 
+  url("https://transparenttextures.com/patterns/subtle-dots.png"),
+  /* linear-gradient(to bottom right,#3F5B69,#C34477,#f1a17c) ; */
+  #20356A
+  ;
+  font-family: Nunito Sans;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+.title{
+  -webkit-text-stroke: #f79663 1px;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide-left{
+  animation-name: slide-left;
+  animation-duration: 1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.slide-right{
+  animation-name: slide-right;
+  animation-duration: 1s;
 }
 
-.card {
-  padding: 2em;
+@keyframes slide-left{
+  0% {left:100rem}
+  100%{left:0rem}
 }
 
-.read-the-docs {
-  color: #888;
+@keyframes slide-right{
+  0% {right:100rem}
+  100%{right:0rem}
 }
