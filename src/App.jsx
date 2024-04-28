@@ -49,7 +49,7 @@ function App() {
       
 
         {/* first screen */}
-      <div className='h-screen w-full flex flex-col gap-5 items-center justify-center px-20'>
+      <div id="home" className='h-screen w-full flex flex-col gap-5 items-center justify-center px-20'>
         
         {/* <div className='max-w-screen overflow-x-clip w-full flex flex-col items-center'>
         <div className="title-outline text-10xl font-black tracking-tight w-auto text-start self-start mb-4 slide-left">
@@ -59,7 +59,7 @@ function App() {
         HELLO!
         </div>
         </div> */}
-        <div data-aos="fade-up" className="bg-none w-7/12 relative h-auto text-center tracking-tight leading-tight font-extrabold slide-in">
+        <div data-aos="fade-up" className="bg-none xl:w-7/12 md:w-full sm:w-full relative h-auto text-center tracking-tight leading-tight font-extrabold slide-in">
         <span className='text-about text-7xl'>anya kuan</span>
         {/* <hr className='border border-solid my-5'></hr> */}
         <p className='text-lg mt-4 text-[#002733] text-desc lowercase font-bold tracking-wide'>
@@ -81,11 +81,11 @@ function App() {
 
       </div>
 
-      <div className='h-auto bg-blue-white/90 w-full px-10 py-10 flex flex-row justify-between items-between overflow-x-clip'>
+      <div className='h-auto bg-blue-white/90 w-full px-10 py-16 gap-8 flex xl:flex-row md:flex-col sm:flex-col xl:justify-between sm:justify-center xl:items-between sm:items-center overflow-x-clip'>
         <div data-aos="fade-right" className="text-transparent text-8xl font-black tracking-tight self-start">
         techstack.
         </div>
-        <div data-aos="fade-left" className=' ms-10 w-2/4 grid grid-cols-5 gap-8'>
+        <div data-aos="fade-left" className=' ms-10 xl:w-2/4 md:w-full sm:w-full grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 gap-8 '>
             <img src={js_logo} alt="javascript" className='w-20 h-20 rounded-md' />
             <img src={py_logo} alt="python" className='w-20 h-20 rounded-md' />
             <img src={react_logo} alt="react" className='w-20 h-20 rounded-md' />
@@ -110,7 +110,7 @@ function App() {
         </div> */}
       </div>
 
-      <div className='h-auto gap-16 w-full px-10 py-36 flex flex-col justify-between items-between overflow-x-clip'>
+      <div id="projects" className='h-auto gap-16 w-full px-10 py-36 flex flex-col justify-between items-between overflow-x-clip'>
         <div data-aos="fade-left" className="text-about text-8xl font-black tracking-tight self-end me-10">
         projects.
         </div>
