@@ -16,11 +16,22 @@ import vitest_logo from './assets/vitest.png'
 import github_logo from './assets/github.png'
 import flowbite_logo from './assets/flowbite.png'
 import vscode_logo from './assets/vscode.png'
+import figma_logo from './assets/figma.png'
+import ps_logo from './assets/photoshop.png'
+import appsheet_logo from './assets/appsheet.png'
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Card from './Card'
 import sample from './assets/project/sample.png'
+import job_order from './assets/project/job-order.png'
+import catalogue from './assets/project/cat-alogue.png'
+import catalogue2 from './assets/project/cat-alogue-2.png'
+import addubot from './assets/project/addubot.png'
+import rizaldle from './assets/project/rizaldle.png'
+import sisform from './assets/project/sis-form.png'
+import sis from './assets/project/sis.png'
+import lostandfound from './assets/project/lostandfound.png'
 
 
 function App() {
@@ -90,6 +101,9 @@ function App() {
             <img src={java_logo} alt="java" className='w-20 h-20 rounded-md' />
             <img src={github_logo} alt="github" className='w-20 h-20 rounded-md' />
             <img src={vscode_logo} alt="visual studio code" className='w-20 h-20 rounded-md' />
+            <img src={figma_logo} alt="figma" className='w-auto h-20 self-center rounded-md' />
+            <img src={ps_logo} alt="photoshop" className='w-20 h-20 rounded-md' />
+            <img src={appsheet_logo} alt="appsheet" className='w-20 h-20 rounded-md' />
         </div>
         {/* <div className="bg-blue-green w-2/4 h-auto p-10 outline outline-red-one outline-offset-2 text-sm shadow-xl text-blue-dark tracking-tight leading-tight font-extrabold">
           Consequat dolore dolor exercitation in tempor aute pariatur minim tempor excepteur. Culpa et laborum voluptate ut. Dolor sunt est nostrud adipisicing exercitation in adipisicing sunt anim velit ad aliquip magna. Et esse culpa minim tempor velit est et consectetur amet deserunt.
@@ -100,19 +114,32 @@ function App() {
         <div data-aos="fade-left" className="text-about text-8xl font-black tracking-tight self-end me-10">
         projects.
         </div>
-        <div data-aos="fade-right" className="self-start w-full h-auto pb-10">
-        <div className='w-full grid grid-flow-col flex-nowrap overflow-x-scroll scroll-style pb-5 gap-5'>
-          <Card title="TEST" image={sample} alt="sample"/>
-          <Card title="TEST" image={sample} alt="sample"/>
-          <Card title="TEST" image={sample} alt="sample"/>
-          <Card title="TEST" image={sample} alt="sample"/>
-          <Card title="TEST" image={sample} alt="sample"/>
-          <Card title="TEST" image={sample} alt="sample"/>
+
+        <div data-aos="fade-right" className="self-start w-full h-auto">
+        <div className="flex flex-row w-full items-center gap-10 mb-8">
+          <span className="text-about text-5xl font-black tracking-tight">applications.</span>
+          <hr className="border border-blue-white w-full"/>
+        </div> 
+        <div className='w-full h-auto grid grid-flow-col flex-nowrap overflow-x-scroll scroll-style pb-8 gap-5'>
+          <Card platform="Github" title="Job Order Management System for Computer Repairs" image={job_order} alt="preview" tags={["reactjs","python flask","bootstrap","mysql"]} link="https://github.com/kunpaoo/jb-react-flask"/>
+          <Card platform="Github" title="Rizaldle: Filipino Wordle Game" image={rizaldle} alt="preview" tags={["html","css","javascript","tailwindcss"]} link="https://github.com/kunpaoo/wordle"/>
+          <Card platform="Github" title="Cat-alogue: Cat Adoption" image={catalogue} alt="preview" tags={["reactjs","tailwindcss","flowbite","vite","vitest"]} link="https://github.com/avrlalnex/cat-alogue"/>
+          <Card platform="Appsheet" title="Lost-and-Found-it" image={lostandfound} alt="preview" tags={["appsheet"]} link="https://www.appsheet.com/start/44222b13-2f21-49ce-9502-a0161af5eb56"/>
+          <Card platform="Github" title="Student Information Form" image={sisform} alt="preview" tags={["java"]} link="https://github.com/kunpaoo/finalsOOP"/>
+          </div>
         </div>
+
+        <div data-aos="fade-right" className="self-start w-full h-auto">
+        <div className="flex flex-row w-full items-center gap-10 mb-8">
+          <span className="text-about text-5xl font-black tracking-tight">prototypes.</span>
+          <hr className="border border-blue-white w-full"/>
+        </div> 
+        <div className='w-full h-auto grid grid-flow-col justify-start flex-nowrap overflow-x-scroll scroll-style pb-8 gap-5'>
+          <Card platform="Figma" title="Cat-alogue: Cat Adoption" image={catalogue2} alt="preview" tags={["figma"]} link="https://www.figma.com/proto/sj6Zp7xLhBuByelZg80h5D/Cat-alogue?node-id=29-572&scaling=scale-down&mode=design&t=IAujYEgIFU7EvAW7-1"/>
+          <Card platform="Figma" title="AdDUBot" image={addubot} alt="preview" tags={["figma"]} link="https://www.figma.com/proto/kIZmZWxQnNmCpq0aXqjmwP/AdDUBot?type=design&node-id=283-1754&t=Xhp4ljq3ITNRc2Y9-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=375%3A2497&mode=design"/>
+          <Card platform="Figma" title="Student Information System" image={sis} alt="preview" tags={["figma"]} link="https://www.figma.com/proto/L2GQ46tzvwseZdAe8ujc93/SIS?node-id=1-39&starting-point-node-id=1%3A3&scaling=scale-down&mode=design&t=01dEqwZUw8AmqbJ1-1"/>
+          </div>
         </div>
-        {/* <div className="bg-blue-green w-2/4 h-auto p-10 outline outline-red-one outline-offset-2 text-sm shadow-xl text-blue-dark tracking-tight leading-tight font-extrabold">
-          Consequat dolore dolor exercitation in tempor aute pariatur minim tempor excepteur. Culpa et laborum voluptate ut. Dolor sunt est nostrud adipisicing exercitation in adipisicing sunt anim velit ad aliquip magna. Et esse culpa minim tempor velit est et consectetur amet deserunt.
-        </div> */}
       </div>
       </div>
       </div>
