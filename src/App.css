@@ -28,6 +28,7 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
+
 .slide-left{
   animation-name: slide-left;
   animation-duration: 1s;
@@ -46,4 +47,32 @@ body{
 @keyframes slide-right{
   0% {right:100rem}
   100%{right:0rem}
+}
+
+.text-about{
+  position: relative;
+  
+  /* -webkit-text-stroke:  1px; */
+  /* text-shadow: 2px 2px 2px 2px #364c9f; */
+  text-shadow: -1px -1px 0 #002733, 1px -1px 0 #002733, -1px 1px 0 #002733, 3px 3px 0 #002733;
+  -webkit-text-fill-color: #EDF6F9;
+}
+
+.text-desc{
+  /* text-shadow: -1px -1px 0 #EDF6F9, 1px -1px 0 #EDF6F9, -1px 1px 0 #EDF6F9, 1px 1px 0 #EDF6F9;
+  -webkit-text-fill-color: #364c9f; */
+  text-shadow: -1px -1px 0 #002733, 1px -1px 0 #002733, -1px 1px 0 #002733, 2px 2px 0 #002733;
+  -webkit-text-fill-color: #EDF6F9;
+}
+
+.text-transparent{
+  
+  background: 
+  url("https://transparenttextures.com/patterns/subtle-dots.png"),
+  /* linear-gradient(to bottom right,#3F5B69,#C34477,#f1a17c) ; */
+  #20356A;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+
 }

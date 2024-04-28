@@ -1,0 +1,14 @@
+.title-outline-nav{
+    position: relative;
+    text-shadow: -1px -1px 0 #002733, 1px -1px 0 #002733, -1px 1px 0 #002733, 2px 2px 0 #002733;
+    -webkit-text-fill-color: #EDF6F9;
+    /* -webkit-text-fill-color: transparent; */
+  }
+
+.bg-blue-dot{
+    background: 
+    url("https://transparenttextures.com/patterns/subtle-dots.png"),
+    /* linear-gradient(to bottom right,#3F5B69,#C34477,#f1a17c) ; */
+    #20356A
+    ;
+}
