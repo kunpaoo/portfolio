@@ -85,7 +85,7 @@ function App() {
         <div data-aos="fade-right" className="text-transparent text-8xl font-black tracking-tight self-start">
         techstack.
         </div>
-        <div data-aos="fade-left" className=' ms-10 xl:w-2/4 md:w-full sm:w-full grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 gap-8 '>
+        <div data-aos="fade-left" className=' ms-10 xl:w-2/4 lg:w-full md:w-full sm:w-full grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-10 xl:justify-items-start lg:justify-items-center md:justify-items-center sm:justify-items-center '>
             <img src={js_logo} alt="javascript" className='w-20 h-20 rounded-md' />
             <img src={py_logo} alt="python" className='w-20 h-20 rounded-md' />
             <img src={react_logo} alt="react" className='w-20 h-20 rounded-md' />
