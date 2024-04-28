@@ -12,3 +12,7 @@
     #20356A
     ;
 }
+
+.sticky-nav{
+  z-index: 1;
+}
