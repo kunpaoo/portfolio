@@ -82,11 +82,11 @@ function App() {
 
       </div>
 
-      <div className='h-auto bg-blue-white/90 w-full px-10 py-16 gap-8 flex xl:flex-row md:flex-col sm:flex-col xl:justify-between sm:justify-center xl:items-between sm:items-center overflow-x-clip'>
+      <div className='h-auto bg-blue-white/90 w-full px-10 py-16 xl:gap-8 lg:gap-16 md:gap-16 sm:gap-16 flex xl:flex-row md:flex-col sm:flex-col xl:justify-between sm:justify-center xl:items-between sm:items-center overflow-x-clip'>
         <div data-aos="fade-right" className="text-transparent text-8xl font-black tracking-tight self-start">
         techstack.
         </div>
-        <div data-aos="fade-left" className=' ms-10 xl:w-2/4 lg:w-full md:w-full sm:w-full grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-10 xl:justify-items-start lg:justify-items-center md:justify-items-center sm:justify-items-center '>
+        <div data-aos="fade-left" className=' xl:ms-10 lg:ms-0 xl:w-2/4 lg:w-full md:w-full sm:w-full grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-10 xl:justify-items-start lg:justify-items-center md:justify-items-center sm:justify-items-center '>
             <img src={js_logo} alt="javascript" className='w-20 h-20 rounded-md' />
             <img src={py_logo} alt="python" className='w-20 h-20 rounded-md' />
             <img src={react_logo} alt="react" className='w-20 h-20 rounded-md' />
