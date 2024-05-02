@@ -111,7 +111,7 @@ function App() {
         </div> */}
       </div>
 
-      <div id="projects" className='h-auto gap-16 w-full px-10 py-36 flex flex-col justify-between items-between overflow-x-clip'>
+      <div id="projects" className='h-auto gap-16 w-full px-10 pt-36 pb-20 flex flex-col justify-between items-between overflow-x-clip'>
         <div data-aos="fade-left" className="text-about text-8xl font-black tracking-tight self-end me-10">
         projects.
         </div>
