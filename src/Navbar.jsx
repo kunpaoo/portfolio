@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='flex flex-row gap-10'>
         <AnchorLink href="#home">home.</AnchorLink>
         <AnchorLink href="#projects">projects.</AnchorLink>
-        <AnchorLink href="#projects">contact.</AnchorLink>
+        <AnchorLink href="#contact">contact.</AnchorLink>
         </div>
     </div>
     </> );

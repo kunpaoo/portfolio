@@ -1,6 +1,7 @@
 
 import './App.css'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import js_logo from './assets/js.png'
 import py_logo from './assets/python.png'
 import react_logo from './assets/react.svg'
@@ -141,6 +142,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer/>
       </div>
       </div>
     </>
